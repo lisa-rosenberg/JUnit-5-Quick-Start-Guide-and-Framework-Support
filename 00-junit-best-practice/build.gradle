@@ -14,7 +14,7 @@ dependencies {
 
 // Execute Tests from Jar with
 // java -jar junit-platform-console-standalone-1.4.0.jar -cp (abolute)\buidl\libs\00-junit-best-practice-tests.jar --scan-classpath --include-classname="^(.)*$"
-task testJar(type: Jar) {
+tasks.register('testJar', Jar) {
     getArchiveClassifier().set("tests")
 
     from {
