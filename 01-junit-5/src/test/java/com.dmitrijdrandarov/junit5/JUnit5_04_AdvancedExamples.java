@@ -36,7 +36,7 @@ class JUnit5_04_AdvancedExamples {
     /**
      * Here I go a step further and annotate my days dynamically, by specifying the days I don't want the test to run
      * on with another custom annotation called @{@link DisabledWeekdays}.
-     *
+     * <p>
      * My extension {@link DisabledOnWeekday} later searches for @{@link DisabledWeekdays} and determines whether the
      * test should run or not.
      */
@@ -63,7 +63,7 @@ class JUnit5_04_AdvancedExamples {
      * For this example I wrote an annotation @{@link Benchmarked} that doesn't include @{@link Test} - which it could -
      * but instead only contains a self-written extension called {@link BenchmarkExtension}. Annotating your class
      * with this will basically provide you with automatic benchmarking.
-     *
+     * <p>
      * This could of course be also placed on top of the class.
      */
     @Test

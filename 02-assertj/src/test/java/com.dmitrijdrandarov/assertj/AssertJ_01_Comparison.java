@@ -31,7 +31,7 @@ class AssertJ_01_Comparison {
 
     /**
      * Hard to read and failed assertion messages are meaningless.
-     *
+     * <p>
      * Let's not even talk about Java 7 and downwards.
      */
     @Test
@@ -50,7 +50,7 @@ class AssertJ_01_Comparison {
 
     /**
      * Better, but still hard to read. Failed assertion messages are ok.
-     *
+     * <p>
      * Framework hasn't been updated in a while. No longer bundled in JUnit 5 like it was in JUnit 4.
      */
     @Test
@@ -83,7 +83,7 @@ class AssertJ_01_Comparison {
 
     /**
      * Short, readable, meaningful failed assertion message.
-     *
+     * <p>
      * Framework is frequently updated.
      */
     @Test

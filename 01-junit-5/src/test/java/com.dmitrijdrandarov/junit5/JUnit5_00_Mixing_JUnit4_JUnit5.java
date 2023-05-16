@@ -5,13 +5,13 @@ import org.junit.jupiter.api.Assertions;
 
 /**
  * This all happens within the JUnit 5 environment! Therefore, you can make the class package-private.
- *
+ * <p>
  * JUnit 5 is managed by:
  * org.junit.jupiter:junit-jupiter-api:5.*.*
- *
+ * <p>
  * JUnit 4 lagacy support is managed by:
  * org.junit.vintage:junit-vintage-engine:4.12.0
- *
+ * <p>
  * Public access modifier is still required on mixed test classes.
  */
 public class JUnit5_00_Mixing_JUnit4_JUnit5 {

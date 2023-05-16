@@ -123,7 +123,7 @@ class JUnit_BestPractice {
     /**
      * Starting with JUnit 5 you no longer have to necessarily declare the delta, since it will be checked by the framework.
      * For implementation details look in {@link org.junit.jupiter.api.AssertionUtils#doublesAreEqual(double, double)}.
-     *
+     * <p>
      * If you use the delta for rounding mistakes, really think about it: You 'actually' calculate rounded values, but you 'expect' not rounded ones,
      * so you just use a delta as a workaround? Really?! That's not how you check for 'equality'!
      */

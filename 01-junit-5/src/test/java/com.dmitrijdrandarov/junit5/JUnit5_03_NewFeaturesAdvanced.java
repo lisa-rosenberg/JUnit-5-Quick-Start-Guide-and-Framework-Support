@@ -63,7 +63,7 @@ class JUnit5_03_NewFeaturesAdvanced {
     /**
      * An example for a {@link TestFactory} with JUnit 5.
      * {@link DynamicTest#stream(Iterator, Function, ThrowingConsumer)} provides an easy way to factorize multiple tests, which will be executed automatically.
-     *
+     * <p>
      * It's basically similar to a for-loop that reads data and asserts, but these test will be grouped and displayed separately in the test results.
      *
      * @return A stream of dynamic tests
@@ -104,7 +104,7 @@ class JUnit5_03_NewFeaturesAdvanced {
     /**
      * All possible extensions are implementations of {@link Extension} or its
      * extensions since those are required for {@link ExtendWith} or {@link Extensions}.
-     *
+     * <p>
      * The default implementations are currently inside {@link org.junit.jupiter.api.extension} and a list of them
      * inside the JavaDoc of {@link ExtendWith}.
      */
@@ -114,7 +114,7 @@ class JUnit5_03_NewFeaturesAdvanced {
     /**
      * For this example I use my implementation of {@link ExecutionCondition} called {@link DisabledOnMonday} to
      * tell JUnit to disable this test on mondays, because who likes those, right?
-     *
+     * <p>
      * This annotation might just as well be placed on class level. To see how I implemented this look at
      * {@link DisabledOnMonday}.
      */
