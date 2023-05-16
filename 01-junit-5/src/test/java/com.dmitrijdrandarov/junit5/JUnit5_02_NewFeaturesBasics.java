@@ -130,7 +130,7 @@ class JUnit5_02_NewFeaturesBasics {
 
     /**
      * Tests can now be provided with parameters.
-     * Those are resolved by {@link ParameterResolver}-Implementations which in turn are extensions of the above mentioned {@link Extension}.
+     * Those are resolved by {@link ParameterResolver}-Implementations which in turn are extensions of the above-mentioned {@link Extension}.
      * This enables dependency injection at method level.
      *
      * Resolvers for {@link TestInfo} and {@link TestReporter} are already provided.

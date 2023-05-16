@@ -44,7 +44,7 @@ class JUnit5_01_GeneralChanges {
 
     /**
      * Annotation @Ignore was replaced by @{@link Disabled}. Sounds less negative.
-     * However a reason for the deactivation will be printed which can be more advanced with features like {@link ExecutionCondition}.
+     * However, a reason for the deactivation will be printed which can be more advanced with features like {@link ExecutionCondition}.
      */
     //@Disabled
     @Test

@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.jupiter.api.Assertions;
 
 /**
- * This all happens within the JUnit 5 environment! Therefore you can make the class package-private.
+ * This all happens within the JUnit 5 environment! Therefore, you can make the class package-private.
  *
  * JUnit 5 is managed by:
  * org.junit.jupiter:junit-jupiter-api:5.*.*
