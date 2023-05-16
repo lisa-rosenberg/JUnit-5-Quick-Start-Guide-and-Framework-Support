@@ -1,20 +1,20 @@
 dependencies {
     // Main-dependency needed for JUnit 5
-     "org.junit.jupiter:junit-jupiter-api:$junit5_version"
+     testImplementation "org.junit.jupiter:junit-jupiter-api:$junit5_version"
 
 
     // AssertJ
-     "org.assertj:assertj-core:$assertj_version"
+     testImplementation "org.assertj:assertj-core:$assertj_version"
 
 
     // Hamcrest for comparison
-     "org.hamcrest:hamcrest-all:$hamcrest_version"
+     testImplementation "org.hamcrest:hamcrest-all:$hamcrest_version"
 
 
     // Commons
-     project(":common")
+     testImplementation project(":common")
 
 
     // Logging
-     "org.slf4j:slf4j-simple:$slf4j_version"
+     testImplementation "org.slf4j:slf4j-simple:$slf4j_version"
 }

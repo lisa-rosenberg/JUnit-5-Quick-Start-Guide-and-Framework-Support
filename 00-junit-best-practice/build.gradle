@@ -1,15 +1,15 @@
 dependencies {
     // Main-dependency needed for JUnit 5
-     implementation "org.junit.jupiter:junit-jupiter-api:$junit5_version"
-     implementation(group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.4.0')
+    testImplementation "org.junit.jupiter:junit-jupiter-api:$junit5_version"
+    testImplementation (group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.4.0')
 
 
     // Commons
-     implementation project(":common")
+    testImplementation project(":common")
 
 
     // Logging
-     implementation "org.slf4j:slf4j-simple:$slf4j_version"
+    testImplementation "org.slf4j:slf4j-simple:$slf4j_version"
 }
 
 // Execute Tests from Jar with
@@ -18,7 +18,7 @@ tasks.register('testJar', Jar) {
     getArchiveClassifier().set("tests")
 
     from {
-        configurations..collect { it.isDirectory() ? it : zipTree(it) }
+        configurations.testImplementation.collect { it.isDirectory() ? it : zipTree(it) }
     }
 
     from {
