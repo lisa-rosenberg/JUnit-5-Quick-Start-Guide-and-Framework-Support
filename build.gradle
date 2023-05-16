@@ -61,7 +61,7 @@ allprojects {
         maven { url 'https://repo.spring.io/snapshot' }
         maven { url 'https://repo.spring.io/milestone' }
         maven { url 'https://jitpack.io' }
-        maven { url "http://nexus.gluonhq.com/nexus/content/repositories/releases/" }
+        maven { url "https://nexus.gluonhq.com/nexus/content/repositories/releases/" }
 
     }
 }
@@ -82,8 +82,8 @@ configure(subprojects - project(":03-spring")) {
     targetCompatibility = JavaVersion.VERSION_12
 
     dependencies {
-        testRuntime "org.junit.jupiter:junit-jupiter-engine:$junit5_version"
-        testRuntime "org.junit.vintage:junit-vintage-engine:$junit5_vintage4_version"
+         "org.junit.jupiter:junit-jupiter-engine:$junit5_version"
+         "org.junit.vintage:junit-vintage-engine:$junit5_vintage4_version"
     }
 }
 
@@ -95,5 +95,5 @@ configure(subprojects - project(":03-spring")) {
 
 wrapper {
     distributionType = Wrapper.DistributionType.ALL
-    gradleVersion "5.6.3"
+    gradleVersion "8.1.1"
 }

@@ -74,11 +74,11 @@ If you need lagacy support for JUnit 4 or even JUnit 3 to run in parallel to JUn
 .**Equivalents for Gradle**
 [source,gradle]
 ----
-  testCompile 'org.junit.jupiter:junit-jupiter-api:5.0.3'
+  testImplementation 'org.junit.jupiter:junit-jupiter-api:5.0.3'
 ----
 [source,gradle]
 ----
-  testCompile 'org.junit.vintage:junit-vintage-engine:4.12.0'
+  testImplementation 'org.junit.vintage:junit-vintage-engine:4.12.0'
 ----
 
 
@@ -738,10 +738,10 @@ May it be for workshops or presentations. Just give credits. ;)
 
 === Further Reference
 [%hardbreaks]
-* http://junit.org/junit5/docs/current/user-guide[Official JUnit 5 User Guide]
+* https://junit.org/junit5/docs/current/user-guide[Official JUnit 5 User Guide]
 * https://github.com/junit-team/junit5[JUnit 5 GitHub]
 * https://github.com/junit-team/junit5/milestones/[JUnit 5 Milestone plan]
-* http://files.zeroturnaround.com/pdf/zt_junit_cheat_sheet.pdf[Cheat Sheet from ZERO TURNAROUND]
+* https://files.zeroturnaround.com/pdf/zt_junit_cheat_sheet.pdf[Cheat Sheet from ZERO TURNAROUND]
 
 == Repository Timeline
 
